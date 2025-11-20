@@ -1,0 +1,158 @@
+/* ^ Import Google fonts */
+/* ! Pacifico font */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+/* ! Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* ^ Default CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+/* ^ Navbar */
+nav {
+  width: 100%;
+  height: 6.72rem;
+  background-color: #ffffff;
+  border-bottom: 4px solid #f77f00;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+/* ^ logo */
+nav img {
+  width: 161px;
+  height: 85px;
+}
+/* ^ nav elements */
+.nav-elements ul {
+  display: flex;
+  align-items: center;
+}
+.nav-elements ul li {
+  list-style: none;
+  position: relative;
+  align-self: center;
+}
+.nav-elements ul li a {
+  text-decoration: none;
+  margin: 0 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #003049;
+}
+.non-drop-nav:hover {
+  color: #f77f00;
+  text-decoration: underline #f77f00;
+}
+/* ^ Dropdown */
+.has-dropdown .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ecf0f1;
+  border-radius: 8px;
+  padding: 0.8rem 0;
+  min-width: 150px;
+  list-style: none;
+}
+.has-dropdown:hover .dropdown {
+  display: block;
+  z-index: 1;
+}
+.has-dropdown .dropdown li {
+  margin-top: 0.5rem;
+}
+.dropdown li:hover {
+  background-color: #fef5e7;
+}
+/* ^ Call button */
+button {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  gap: 0.5rem;
+}
+.btn {
+  background-color: #f77f00;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid #f77f00;
+  border-radius: 30px;
+  color: #f77f00;
+  cursor: pointer;
+}
+
+/* ^ Hero section */
+.hero {
+  height: 85vh;
+  background-image: url("./images/Tuscan-chicken-hero-img\ 1.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  max-width: 850px;
+  padding: 2rem;
+}
+.hero-content h1 {
+  font-size: 5rem;
+  font-weight: 900;
+}
+.hero-content p {
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+.btns {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  gap: 1rem;
+}
+.secbtn {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-weight: bold;
+}
+.secbtn:hover {
+  background-color: #f77f00;
+  border: none;
+  cursor: pointer;
+}
